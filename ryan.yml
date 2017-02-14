@@ -23,7 +23,6 @@
         - wget
         - pwgen
         - xmlstarlet
-        - htop-osx
         - siege
         - watch
         - rsync
