@@ -4,15 +4,44 @@
   connection: local
 
   tasks:
-    - name: install base apps
+    - name: install base brews
       homebrew: name={{item}} state=latest
       with_items:
         - node
-        - docker-engine
+        - bash-completion
         - apm-bash-completion
         - brew-cask-completion
         - docker-completion
         - docker-compose-completion
+        - tmux
+        - powerline
+        - coreutils
+        - autojump
+        - fzf
+        - fish
+        - git
+        - git-extras
+        - wget
+        - pwgen
+        - xmlstarlet
+        - htop-osx
+        - siege
+        - watch
+        - rsync
+        - maven
+        - gradle
+        - httpie
+        - osxfuse
+        - sshfs
+        - ack
+        - ag
+        - wget
+        - python3
+        - go
+        - docker-engine
+        - docker-compose
+        - uchardet
+        - graphviz
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
